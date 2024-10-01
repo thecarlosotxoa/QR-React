@@ -12,7 +12,7 @@ function App() {
 
   return (
     <>
-      <div className="w-full min-h-screen grid place-content-center bg-[#181818]">
+      <div className="w-full min-h-screen grid place-content-center bg-[#0a4d54]">
         <div className="w-[23rem] p-7 space-y-4 text-slate-300">
           <h1 className="text-2xl font-semibold text-center text-slate-100">
             Generador de QR
@@ -23,16 +23,16 @@ function App() {
               style={{ height: "auto", maxWidth: "100%", width: "100%" }}
             />
           ) : (
-            <div className="w-full h-[18rem] border border-neutral-200 rounded-3xl grid place-content-center bg-[#202020]"></div>
+            <div className="w-full h-[18rem] border border-neutral-200 rounded-3xl grid place-content-center bg-[#a3aba5]"></div>
           )}
           <form className="space-y-1" onSubmit={handler}>
             <div>
               <input
-                className="bg-[#252525] rounded w-full p-2 focus:outline outline-neutral-300"
+                className="bg-[#a3aba5] rounded w-full p-2 focus:outline outline-neutral-300 text-black font-medium"
                 placeholder="Tranforme su texto en un código QR"
               ></input>
             </div>
-            <button className="w-full py-3 flex justify-center bg-[#252525] hover:bg-neutral-600 duration-200 rounded">
+            <button className="w-full py-3 flex justify-center bg-[#a3aba5] hover:bg-[#e2dedc] duration-200 rounded text-black font-medium">
               Crear
             </button>
           </form>
